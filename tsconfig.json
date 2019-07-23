@@ -8,6 +8,7 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "isolatedModules": true,
+    "noImplicitAny": true,
     "jsx": "react",
 
     "moduleResolution": "node",

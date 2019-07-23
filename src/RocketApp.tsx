@@ -4,8 +4,7 @@ import './styles.css';
 import { mission } from './data/rockets';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const launchImageArray = mission.links.flickr_images;
-const launchDateUnix = mission.launch_date_unix * 1000;
+// Create a State type below this line
 
 export default class RocketApp extends React.Component<{}, {}> {
   state = {

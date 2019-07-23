@@ -3,19 +3,17 @@ import './styles.css';
 // Rocket Info
 import { mission } from './data/rockets';
 import 'bootstrap/dist/css/bootstrap.css';
-const defaultLaunchImg = require('./assets/2013_-_9_falcon_9_ses_launch-4.jpg');
-const defaultLogoImg = require('./assets/mission-logo.png');
 
-const launchImageArray: Array<string> = mission.links.flickr_images;
-const launchDateUnix: number = mission.launch_date_unix * 1000;
+const launchImageArray = mission.links.flickr_images;
+const launchDateUnix = mission.launch_date_unix * 1000;
 
 export default class RocketApp extends React.Component<{}, {}> {
   state = {
     appTitle: 'SpaceX Launches',
-    launchImg: defaultLaunchImg,
+    launchImg: require('./assets/2013_-_9_falcon_9_ses_launch-4.jpg'),
     rocketName: '',
     missionName: '',
-    missionLogo: defaultLogoImg,
+    missionLogo: require('./assets/mission-logo.png'),
     missionDetails: '',
     missionSuccess: false,
     flightNumber: 0,
@@ -28,18 +26,7 @@ export default class RocketApp extends React.Component<{}, {}> {
 
   _getNewRocket() {
     this.setState({
-      rocketName: mission.rocket.rocket_name,
-      missionName: mission.mission_name,
-      missionLogo: mission.links.mission_patch_small,
-      launchImg: launchImageArray[Math.floor(Math.random() * 5)],
-      missionDetails: mission.details,
-      flightNumber: mission.flight_number,
-      missionId: mission.mission_id,
-      launchDate: new Date(launchDateUnix).toDateString(),
-      missionSuccess: mission.launch_success,
-      payloadSize: mission.rocket.payload_mass_kg,
-      ships: mission.ships,
-      isShowingMissionData: true,
+      // Use this to change the state values when the button is clicked.
     });
   }
   render() {

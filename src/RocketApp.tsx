@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './styles.css';
 // Rocket Info
-import { mission } from './data/rockets';
+import { mission } from './data/mission';
 import 'bootstrap/dist/css/bootstrap.css';
 
 // Create a State type below this line

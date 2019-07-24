@@ -37,7 +37,7 @@ export default class RocketApp extends React.Component<{}, {}> {
         <h1 className="app-title">{this.state.appTitle}</h1>
         <div className="mx-auto" style={{ width: 200 }}>
           <button type="button" className="btn btn-danger" onClick={() => this._getNewMission()}>
-            Get Rocket Data
+            Get Launch Data
           </button>
         </div>
         {this.state.isShowingMissionData ? (

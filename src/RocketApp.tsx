@@ -9,10 +9,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default class RocketApp extends React.Component<{}, {}> {
   state = {
     appTitle: 'SpaceX Launches',
-    launchImg: require('./assets/2013_-_9_falcon_9_ses_launch-4.jpg'),
+    launchImg: '',
     rocketName: '',
     missionName: '',
-    missionLogo: require('./assets/mission-logo.png'),
+    missionLogo: '',
     missionDetails: '',
     missionSuccess: false,
     flightNumber: 0,
@@ -26,6 +26,9 @@ export default class RocketApp extends React.Component<{}, {}> {
   _getNewRocket() {
     this.setState({
       // Use this to change the state values when the button is clicked.
+      launchImg: require('./assets/2013_-_9_falcon_9_ses_launch-4.jpg'),
+      missionLogo: require('./assets/mission-logo.png'),
+      isShowingMissionData: true,
     });
   }
   render() {
@@ -60,7 +63,7 @@ export default class RocketApp extends React.Component<{}, {}> {
                 Payload Size: <span className="text-info list-margin">{this.state.payloadSize}</span>
               </li>
               <li className="list-group-item">
-                Mission Success:{' '}
+                Mission Success:
                 <span className="text-info list-margin">{this.state.missionSuccess ? 'True' : 'False'}</span>
               </li>
             </ul>

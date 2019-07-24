@@ -23,7 +23,7 @@ export default class RocketApp extends React.Component<{}, {}> {
     isShowingMissionData: false,
   };
 
-  _getNewRocket() {
+  _getNewMission() {
     this.setState({
       // Use this to change the state values when the button is clicked.
       launchImg: require('./assets/2013_-_9_falcon_9_ses_launch-4.jpg'),
@@ -36,7 +36,7 @@ export default class RocketApp extends React.Component<{}, {}> {
       <div className="container">
         <h1 className="app-title">{this.state.appTitle}</h1>
         <div className="mx-auto" style={{ width: 200 }}>
-          <button type="button" className="btn btn-danger" onClick={() => this._getNewRocket()}>
+          <button type="button" className="btn btn-danger" onClick={() => this._getNewMission()}>
             Get Rocket Data
           </button>
         </div>

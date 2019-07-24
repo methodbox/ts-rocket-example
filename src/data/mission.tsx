@@ -1,4 +1,4 @@
-export interface Mission {
+export type Mission = {
   flight_number: number;
   mission_name: string;
   mission_id: Array<string>;
@@ -23,7 +23,7 @@ export interface Mission {
     flickr_images: Array<string>;
   };
   details: string;
-}
+};
 
 export const mission: Mission = {
   flight_number: 65,

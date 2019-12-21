@@ -12,18 +12,18 @@
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "@babel/preset-react": "^7.0.0",
-    "@types/node": "^12.6.8",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
-    "parcel-bundler": "^1.12.3",
-    "typescript": "^3.5.3"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@types/node": "^12.12.21",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.4"
   }
 }
